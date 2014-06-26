@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0F8697191D1BFD00C10B2B /* INKCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F8696191D1BFD00C10B2B /* INKCrystalBall.m */; };
 		5CBCBCDE18FC81E400509B66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBCBCDD18FC81E400509B66 /* Foundation.framework */; };
 		5CBCBCE018FC81E400509B66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBCBCDF18FC81E400509B66 /* CoreGraphics.framework */; };
 		5CBCBCE218FC81E400509B66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBCBCE118FC81E400509B66 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C0F8695191D1BFD00C10B2B /* INKCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INKCrystalBall.h; sourceTree = "<group>"; };
+		5C0F8696191D1BFD00C10B2B /* INKCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INKCrystalBall.m; sourceTree = "<group>"; };
 		5CBCBCDA18FC81E400509B66 /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBCBCDD18FC81E400509B66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5CBCBCDF18FC81E400509B66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				5CBCBCF318FC81E400509B66 /* INKViewController.m */,
 				5CBCBCF518FC81E400509B66 /* Images.xcassets */,
 				5CBCBCE418FC81E400509B66 /* Supporting Files */,
+				5C0F8695191D1BFD00C10B2B /* INKCrystalBall.h */,
+				5C0F8696191D1BFD00C10B2B /* INKCrystalBall.m */,
 			);
 			path = CrystalBall;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			files = (
 				5CBCBCEA18FC81E400509B66 /* main.m in Sources */,
 				5CBCBCEE18FC81E400509B66 /* INKAppDelegate.m in Sources */,
+				5C0F8697191D1BFD00C10B2B /* INKCrystalBall.m in Sources */,
 				5CBCBCF418FC81E400509B66 /* INKViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

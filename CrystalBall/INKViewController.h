@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class INKCrystalBall;
+
 @interface INKViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) INKCrystalBall *crystalBall;
+
 - (IBAction)buttonPressed;
 
 @end

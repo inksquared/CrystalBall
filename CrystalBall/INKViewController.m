@@ -7,6 +7,7 @@
 //
 
 #import "INKViewController.h"
+#import "INKCrystalBall.h"
 
 @interface INKViewController ()
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  
+    self.crystalBall = [[INKCrystalBall alloc] init];
+  
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,11 +30,7 @@
 }
 
 - (IBAction)buttonPressed {
-    self.predictionLabel.text = @"YES";
-    
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
 }
-
-
-
 
 @end
