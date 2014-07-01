@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -16,31 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hv4-Ug-aw6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hv4-Ug-aw6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="248" translatesAutoresizingMaskIntoConstraints="NO" id="dAk-qe-nN9">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="248" translatesAutoresizingMaskIntoConstraints="NO" id="dAk-qe-nN9">
                                 <rect key="frame" x="36" y="183" width="248" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="SNi-JY-t7H"/>
+                                    <constraint firstAttribute="width" constant="248" id="cf7-io-l8g"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXO-II-dqA">
-                                <rect key="frame" x="20" y="499" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXO-II-dqA">
+                                <rect key="frame" x="30" y="501" width="261" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Lda-Rf-Vog"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="261" id="j1H-JI-V4D"/>
+                                    <constraint firstAttribute="width" constant="261" id="mNd-F4-ARR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="47" id="nR8-rK-Udy"/>
+                                </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Predict">
+                                <state key="normal" image="button-off">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="button-on"/>
                                 <connections>
                                     <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="w96-gG-ut6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dAk-qe-nN9" firstAttribute="centerX" secondItem="hv4-Ug-aw6" secondAttribute="centerX" id="Bdf-aK-Yfm"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="eXO-II-dqA" secondAttribute="bottom" constant="20" id="D9i-di-1sl"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="eXO-II-dqA" secondAttribute="bottom" constant="20" id="VtJ-4s-F5E"/>
+                            <constraint firstAttribute="trailing" secondItem="hv4-Ug-aw6" secondAttribute="trailing" id="WL3-U2-mj1"/>
+                            <constraint firstItem="hv4-Ug-aw6" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="bz7-Qc-cGy"/>
+                            <constraint firstItem="dAk-qe-nN9" firstAttribute="centerY" secondItem="hv4-Ug-aw6" secondAttribute="centerY" constant="-33.5" id="gXK-K2-gg9"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hv4-Ug-aw6" secondAttribute="bottom" id="l8x-v3-f5b"/>
+                            <constraint firstItem="hv4-Ug-aw6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="oCe-kA-U8p"/>
+                            <constraint firstAttribute="centerX" secondItem="eXO-II-dqA" secondAttribute="centerX" id="tXv-z6-apq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="predictionLabel" destination="dAk-qe-nN9" id="OmR-Ex-HET"/>
@@ -52,6 +73,8 @@
     </scenes>
     <resources>
         <image name="background" width="320" height="568"/>
+        <image name="button-off" width="261" height="49"/>
+        <image name="button-on" width="261" height="47"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
