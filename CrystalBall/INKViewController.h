@@ -13,7 +13,8 @@
 @interface INKViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
 @property (strong, nonatomic) INKCrystalBall *crystalBall;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
-- (IBAction)buttonPressed;
+- (void) makePrediction;
 
 @end
